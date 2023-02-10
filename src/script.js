@@ -1,6 +1,10 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import * as dat from 'lil-gui'
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
+
+
 
 /**
  * Base
@@ -20,18 +24,23 @@ const scene = new THREE.Scene()
 const textureLoader = new THREE.TextureLoader()
 
 // TODO1: Load a texture with textureLoader from /textures/matcaps/#.png
+// https://threejs.org/docs/?q=textur#api/en/loaders/TextureLoader
 
-// TODO2: init fontLoader with new FontLoader()
+// TODO2: init fontLoader with new FontLoader() and load a font with fontLoader.load()
+// https://threejs.org/docs/?q=font#examples/en/loaders/FontLoader
 
 // TODO3: Create a material with THREE.MeshMatcapMaterial and pass the texture as matcap
+// https://threejs.org/docs/?q=MeshM#api/en/materials/MeshMatcapMaterial
 
-// TODO4: Create a text geometry with THREE.Mesh and pass in parameters
+// TODO4: Create a text geometry with TextGeometry and pass in parameters
+// https://threejs.org/docs/#examples/en/geometries/TextGeometry
 
 // TODO5: Create a text mesh with THREE.Mesh and geometry and material
 
 // TODO6: Add the text mesh to the scene
 
-// TODO7: Create dounut geometry with TorusGeometry and pass in parameters
+// TODO7: Create dounut geometry with TorusGeometry and pass in parameters. You can use the any other geometry you want
+// https://threejs.org/docs/?q=torus#api/en/geometries/TorusGeometry
 
 // TODO8: Create dounut mesh 100 donuts meshes with random positions, sizes, and rotations
 
